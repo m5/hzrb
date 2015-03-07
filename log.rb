@@ -44,11 +44,7 @@ class LogParser
   end
 
   def parse_parameters(entry, line)
-    begin
-      entry.params.merge!(eval(line.split(' ', 2).last))
-    rescue Exception => e
-      puts line
-    end
+    entry.params.merge!(Hash[line.scan(/"(.*?)"=>"(.*?)"/)])
   end
 
   def parse_completed(entry, line)
