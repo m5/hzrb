@@ -1,0 +1,48 @@
+funnels:
+  Publishers:
+    match:
+      url: /heyzap.com.?$/
+    children:
+      New Site:
+        match: 
+          url: /heyzap.com\/publishers\/new_site.?$/
+        children:
+          Get Embed:
+            match:
+              url: /heyzap.com\/publishers\/get_embed/
+  Developers:
+    match:
+      url: /heyzap.com.?$/
+    children:
+      Developers:
+        match: 
+          url: /heyzap.com\/developers.?$/
+        children:
+          New Game:
+            match:
+              url: /heyzap.com\/developers\/new_game.?$/
+            children:
+              Import Games:
+                match:
+                  url: /heyzap.com\/developers\/import_games.?$/
+              New Inventory Item:
+                match:
+                  url: /heyzap.com\/developers\/new_inventory_item.?$/
+              Upload Game:
+                match:
+                  url: /heyzap.com\/developers\/upload_game_simple.?$/
+              
+  
+counters:
+  Front Page:
+    url: /heyzap.com.?$/
+  Payments:
+    url: /heyzap.com\/payments.?$/
+  Payments Lookup:
+    url: /heyzap.com\/payments/get_item.?$/
+  Weebly:
+    controller: heyzap
+    action: index
+    embed_key: 12affbbace
+    permalink: /./
+ 
