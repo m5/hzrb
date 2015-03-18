@@ -22,8 +22,8 @@ class LogParser
     @logfile.each_line do |line|
       if line == "\n"
         yield entry if entry
-        next
         entry = LogEntry.new
+        next
       end
 
 
