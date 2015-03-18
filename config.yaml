@@ -39,7 +39,7 @@ counters:
   Payments:
     url: /heyzap.com\/payments.?$/
   Payments Lookup:
-    url: /heyzap.com\/payments/get_item.?$/
+    url: /heyzap.com\/payments\/get_item.$?/
   Weebly:
     controller: heyzap
     action: index

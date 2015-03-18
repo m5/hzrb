@@ -9,15 +9,15 @@ Log Analysis Challenge
 
 ```
 Counters:
-	Front Page - hits: 2615, uniques: 456
-	Payments - hits: 6, uniques: 3
-	Payments Lookup - hits: 0, uniques: 0
-	Weebly - hits: 43231, uniques: 3418
+	Front Page - hits: 1278, uniques: 442
+	Payments - hits: 3, uniques: 3
+	Payments Lookup - hits: 258, uniques: 2
+	Weebly - hits: 2840, uniques: 810
 Funnels:
-	Publishers - hits: 456
+	Publishers - hits: 442
 		New Site - hits: 55
 			Get Embed - hits: 13
-	Developers - hits: 456
+	Developers - hits: 442
 		Developers - hits: 53
 			New Game - hits: 6
 				Import Games - hits: 0
